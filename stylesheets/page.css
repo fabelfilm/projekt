@@ -47,7 +47,7 @@ html, body {
   
   body {
     padding: 20px;
-    background-color: #222;
+    background-color: #152;
   }
   .page {
     margin: 1em;
@@ -67,8 +67,8 @@ html, body {
   /* width: 793.7007874015749px;   /* (210/25.4)*96 */
   /* height: 1122.5196850393702px; /* (297/25.4)*96 */
     
-  color: black;
-  background-color: white;
+  color: #222;
+  background-color: #eee;
   
   /* This fixes printing in firefox, for some reason */
   display: inline-block;
@@ -86,9 +86,9 @@ html, body {
    You can use padding as well.
    */
   top: 3.5cm;
-  left: 4cm;
-  right: 4cm;
-  bottom: 3.5cm;
+  left: 3cm;
+  right: 3cm;
+  bottom: 4.5cm;
   
   text-align: left;
 }
