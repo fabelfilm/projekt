@@ -44,7 +44,7 @@
 }
 
 .latex h1 {
-  font-size: 2em;
+  font-size: 2em; font-weight:200; letter-spacing:-1px;
 }
 .latex h2 {
   font-size: 1.5em;
