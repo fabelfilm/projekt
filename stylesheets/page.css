@@ -46,17 +46,17 @@ html, body {
 @media screen {
   
   body {
-    padding: 20px;
+    padding: 1px;
     background-color: #135;
   }
   .page {
-    margin: 1em;
-    box-shadow: .75mm .75mm 3mm rgba(0,0,0,.35),
+    margin: .5em;
+    box-shadow: .5mm .5mm 3mm rgba(0,0,0,.35),
                 .33mm .33mm 1.5mm rgba(0,0,0,.2);
   }
   .page-inner {
-    /*box-shadow: inset 0 0 10px #eee,*/
-                /*inset 0 0 1px #ccc;*/
+    box-shadow: inset 0 0 10px #eee,
+                inset 0 0 1px #ccc;
   }
 }
 
