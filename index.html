@@ -26,6 +26,22 @@
         </ul>
     </header>
     <div class="page"><div class="page-inner">
+    <div class="page-inner">
+      <canvas id="c" height="220px" width="220px"></canvas>
+      <script>
+        document.onload=function(){
+        context = document.getElementById('c').getContext("2d");
+        context.strokeStyle = "#df4b26";
+        context.lineJoin = "round";
+        context.lineWidth = 5;
+        
+        context.beginPath();
+            context.moveTo(100,100);
+           context.lineTo(200, 20);
+           context.closePath();
+           context.stroke();
+        }
+      </script>
       <section>
         <h1>Luftschiff-Projekt</h1>
 
