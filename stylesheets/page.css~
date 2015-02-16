@@ -51,12 +51,12 @@ html, body {
   }
   .page {
     margin: .5em;
-    box-shadow: .5mm .5mm 3mm rgba(0,0,0,.35),
-                .33mm .33mm 1.5mm rgba(0,0,0,.2);
+    /*box-shadow: .5mm .5mm 3mm rgba(0,0,0,.35),
+                .33mm .33mm 1.5mm rgba(0,0,0,.2);*/
   }
-  .page-inner { /*
+  .page-inner {
     box-shadow: inset 0 0 10px #eee,
-                inset 0 0 1px #ccc;*/
+                inset 0 0 1px #ccc;
   }
 }
 
