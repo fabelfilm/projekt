@@ -26,21 +26,35 @@
         </ul>
     </header>
     <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/1.jpg');background-size: 100% 100%;"><div class="page-inner">
-      <section>
-      </section>
+      <p class="textbox" style="position:absolute;top:70mm;left:30mm;width:40mm;">
+1917.
+ADINE und BONI leben auf ihrem
+Luftschiff über der Ostsee ihre
+Utopie. Sie komponieren Musik
+und drehen Filme über ihren
+Helden, Prinz Kropotkin, der
+zum Revolutionär geworden ist.
+Fiebrig erwarten sie
+einen Auftrag von ihrer
+anarchistischen Zelle, um die
+Weltrevolution anzuzetteln.</p>
       <small class="page-number">1</small>
     </div></div>
-    <div class="page"><div class="page-inner">
-      <section>
-        <p>Es sollen Märchen, Bilder, Kostüme, und ein großer Spielfilm entstehen.</p>
-      </section>
-      <small class="page-number">2</small>
+    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/2.jpg');background-size: 100% 100%;"><div class="page-inner">
+      
+      <small class="page-number">1</small>
     </div></div>
-    <div class="page"><div class="page-inner">
-      <section>
-        <p>Es sollen Märchen, Bilder, Kostüme, und ein großer Spielfilm entstehen.</p>
-      </section>
-      <small class="page-number">3</small>
+    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/3.jpg');background-size: 100% 100%;"><div class="page-inner">
+      
+      <small class="page-number">1</small>
+    </div></div>
+    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/4.jpg');background-size: 100% 100%;"><div class="page-inner">
+      
+      <small class="page-number">1</small>
+    </div></div>
+    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/5.jpg');background-size: 100% 100%;"><div class="page-inner">
+      
+      <small class="page-number">1</small>
     </div></div>
     <footer>
       <p>Kontaktiere das <a href="https://github.com/luftschiffkollektiv">Luftschiffkollektiv</a>-Team via <b>luftschiffkollektiv@yandex.com</b></p>
