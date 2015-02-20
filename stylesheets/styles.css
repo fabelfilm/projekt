@@ -1,5 +1,5 @@
 .newchapter h1 {font-size:570%;color:white;transform:rotate(-90deg);text-align:right;width:250%;position:relative; top:165mm;left:-62mm;}
-button,a.button {box-shadow:0mm 0mm 1mm black;border:none; color:white;padding:1mm 2mm;margin:1px;background:rgba(40,100,200,.7);}
+button,a.button {box-shadow:0mm 0mm 1mm black;border:none; color:white;padding:1mm 2mm;margin:1px;background:rgba(40,100,200,.7);display:inline-block;}
 button:hover, a.button:hover {outline:1px solid white;}
 hr {height:1px;border:none;background:transparent;}
 
