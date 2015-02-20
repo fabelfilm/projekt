@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Projekt by luftschiffkollektiv</title>
+
+    <link rel="stylesheet" href="stylesheets/page.css">
+    <link rel="stylesheet" href="stylesheets/latex.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <!--script src="javascripts/helpers.js"></script>
+    <script src="javascripts/make_movable.js"></script-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body class="A4pages latex">
+  <!--header>
+        <h1>Projekt</h1>
+        <p>Luftschiff-Projekt 2015</p>
+        <p class="view"><a href="https://github.com/luftschiffkollektiv/projekt">View the Project on GitHub <small>luftschiffkollektiv/projekt</small></a></p>
+        <ul>
+          <li><a href="https://github.com/luftschiffkollektiv/projekt/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/luftschiffkollektiv/projekt/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/luftschiffkollektiv/projekt">View On <strong>GitHub</strong></a></li>
+        </ul>
+    </header-->
+    
+    
+    <div class="" style="z-index:43;position:fixed;top:0;right:0;width:100px;text-align:right;"><button id="ueberblick" onclick="zoom">↑ Kapitel</button><hr/>
+    <a class="button" id="de" style="background:rgb(180,160,10);" href="index.html">deutsch</a>
+    <a class="button" id="en" style="background:rgb(240,30,10);" href="en.html">english</a>
+    <a class="button" id="fr"  style="background:rgb(60,0,180);" href="fr.html">francais</a></div>
+    <script>
+        var zoomedOut = false;
+        document.addEventListener("DOMContentLoaded", function(event) {
+            //nix
+        });
+        function scroll(target){
+            console.log("TARGET: "+target.className)
+            var scroller=setInterval(function(){target.tagName ? target.scrollIntoView() : null;},20);
+            setTimeout(function(){clearInterval(scroller)},1010)
+        }
+        document.getElementById("ueberblick").addEventListener("click", zoom);
+        function zoom(e){
+            if (zoomedOut) {
+                pagecontainer.className = pagecontainer.className.replace(' zoomed-out', '');
+                zoomedOut= false;
+                var pages = document.getElementsByClassName('page');
+                for (var i = 0; i<pages.length; i++) {
+                    pages[i].removeEventListener("click", zoom);
+                    pages[i].removeEventListener("click", scroll(e.currentTarget));
+                }
+            } else {
+                pagecontainer.className += ' zoomed-out';
+                zoomedOut = true;
+                var pages = document.getElementsByClassName('page');
+                for (var i = 0; i<pages.length; i++) {
+                    pages[i].addEventListener("click", zoom);
+                    pages[i].addEventListener("click", scroll);
+                }
+                scroll(pagecontainer);
+            }
+        }
+    </script>
+    
+    
+    
+    <div id="pagecontainer">
+    <section id="story">
+    <div alt="Luftschiff-Projekt" class="page newchapter"><div class="page-inner">
+        <h1>Exposée</h1>
+    </div></div>
+    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/1.jpg');background-size: 100% 100%;"><div class="page-inner">
+      <small class="page-number">1</small>
+    </div></div>
+    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/2.jpg');background-size: 100% 100%;"><div class="page-inner">
+      <p class="textbox movable" style="top: 50mm; left: 67mm;">
+1917.
+ADINE und BONI live their
+utopia on an airship above
+the Baltic sea.
+They compose music and create
+movies about their hero Alexander
+Kropotkin, a prince who became
+revolutionary.
+
+They are anxiously awaiting
+a mission task from their
+anarchist cell that is
+preparing for world revolution.
+    </p>
+      <small class="page-number">1/4</small>
+    </div></div>
+    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/3.jpg');background-size: 100% 100%;"><div class="page-inner">
+      <p class="textbox movable" style="top: 41mm; left: 0mm;color:white;">
+In a storm, Adine rescues a
+shipwrecked woman: CLÉO.
+The next morning, Cléo provokes
+Adine, who counters, and finally
+the three find themselves in a
+vivid dance.
+
+When Cléo is asleep, Adine and Boni
+find their mission in a black envelope.
+They delve into preparations for the
+coup that is scheduled for the next day.
+Meanwhile, they discuss what to do
+with Cléo. Boni wants to keep her in
+the ship whereas Adine wants to get
+rid of her./p>
+      <small class="page-number">2/4</small>
+    </div></div>
+    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/4.jpg');background-size: 100% 100%;"><div class="page-inner">
+      <p class="textbox movable" style="top: 15mm; left: 74mm;">
+      Adine is attracted by Cléo and loses
+      more and more control.
+      In the game between the two, Cléo
+      intensifies her teasing and provokes
+      a brutal fight in the ocean.</p>
+      <small class="page-number">3/4</small>
+    </div></div>
+    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/5.jpg');background-size: 100% 100%;"><div class="page-inner">
+      <p class="textbox movable" style="top: 20mm; left: -7mm;">
+On the street towards the site
+of their coup, Adine and Boni
+are passed by Cléo.
+
+A general, her father, welcomes
+Cléo on his château where the
+noblesse of Europe has arrived for
+the masked ball.
+Among the guests, we make out a
+certain prince: Peter Kropotkin.</p>
+      <small class="page-number">4/4</small>
+    </div></div>
+    </section><section id="finances">
+    <div class="page newchapter"><div class="page-inner">
+        <h1>Finanzierung</h1>
+    </div></div>
+    <div class="page"><div class="page-inner">
+        <h1></h1>
+    </div></div>
+    </section><section id="team">
+    <div class="page newchapter" ><div class="page-inner">
+        <h1>Team</h1>
+    </div></div>
+    <div class="page"><div class="page-inner">
+        <h1></h1>
+    </div></div>
+ </section>
+    </div>
+    <footer>
+      <p>Kontaktiere das <a href="https://github.com/luftschiffkollektiv">Luftschiffkollektiv</a>-Team via <b>luftschiffkollektiv@yandex.com</b></p>
+    </footer>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
