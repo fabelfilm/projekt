@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <link rel="stylesheet" href="stylesheets/page.css">
     <link rel="stylesheet" href="stylesheets/latex.css">
+    <!--script src="javascripts/helpers.js"></script>
+    <script src="javascripts/make_movable.js"></script-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,8 +27,16 @@
           <li><a href="https://github.com/luftschiffkollektiv/projekt">View On <strong>GitHub</strong></a></li>
         </ul>
     </header>
+    
+    
+    
+    
+    
     <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/1.jpg');background-size: 100% 100%;"><div class="page-inner">
-      <p class="textbox" style="position:absolute;top:70mm;left:30mm;width:40mm;">
+      <small class="page-number">1</small>
+    </div></div>
+    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/2.jpg');background-size: 100% 100%;"><div class="page-inner">
+      <p class="textbox movable" style="top: 50mm; left: 67mm; width: 40mm;">
 1917.
 ADINE und BONI leben auf ihrem
 Luftschiff über der Ostsee ihre
@@ -34,26 +44,51 @@ Utopie. Sie komponieren Musik
 und drehen Filme über ihren
 Helden, Prinz Kropotkin, der
 zum Revolutionär geworden ist.
+
 Fiebrig erwarten sie
 einen Auftrag von ihrer
 anarchistischen Zelle, um die
 Weltrevolution anzuzetteln.</p>
       <small class="page-number">1</small>
     </div></div>
-    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/2.jpg');background-size: 100% 100%;"><div class="page-inner">
-      
-      <small class="page-number">1</small>
-    </div></div>
     <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/3.jpg');background-size: 100% 100%;"><div class="page-inner">
-      
+      <p class="textbox movable" style="top: 41mm; left: 0mm; width: 40mm;color:white;">
+Im Sturm rettet Adine eine
+Schiffbrüchige: CLÉO.
+Cléo provoziert Adine, die ihrerseits
+kontert, und es kommt zu einem
+stürmischen Tanz der Drei.
+
+Als Cléo schläft, finden Adine und
+Boni in einem versteckten Kuvert
+den Auftrag. Sie stürzen sich in die
+Vorbereitung des für den Folgetag
+angesetzten Coups. Dabei kommt es
+zu einer Diskussion über Cléo. Boni
+möchte sie im Luftschiff aufnehmen;
+Adine will sie bald loswerden.</p>
       <small class="page-number">1</small>
     </div></div>
     <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/4.jpg');background-size: 100% 100%;"><div class="page-inner">
-      
+      <p class="textbox movable" style="top: 15mm; left: 74mm;width:40mm;">
+Adine nähert sich Cléo an und verliert
+dabei mehr und mehr die Kontrolle.
+Im Spiel der beiden steigert Cléo
+ihre Provokation, bis es zu einem
+brutalen Kampf im Meer kommt. </p>
       <small class="page-number">1</small>
     </div></div>
     <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/5.jpg');background-size: 100% 100%;"><div class="page-inner">
-      
+      <p class="textbox movable" style="top: 20mm; left: -7mm; width: 40mm;">
+Auf der Landstraße werden
+Adine und Boni von Cléo überholt.
+Ein General, ihr Vater, empfängt
+Cléo am Adelssitz, wo sich die
+Noblesse Europas zum Ball
+eingefunden hat.
+Unter den Gästen erkennen
+wir einen gewissen Prinzen:
+Peter Kropotkin.</p>
       <small class="page-number">1</small>
     </div></div>
     <footer>
