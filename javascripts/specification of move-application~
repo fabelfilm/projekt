@@ -1,0 +1,51 @@
+Spezifikation Shortcuts
+
+Wir definieren einen möglichst flachen Satzbaum:
+move
+h
+v
+neg
+1mm ←default
+mul2
+mul3
+div2
+mul5
+mul10
+(zusatz:
+    align
+        to DOM object ←default
+        to similar
+    max
+    min
+    …
+    rotate
+    0° ←default
+    add1°
+    add5°
+    add30°
+    mul°2
+    mul°3
+    openpar (
+    closepar ) //no!
+)
+
+Alle Schwestern können zugleich aktiv sein.
+
+Die aktiven Funktionen werden in der cli angezeigt 
+(z.B. move·v·neg·1·mul2·div2 oder move·h·v·1·mul10·align·rotate·mul°2·(0°·add5°·add30°)·add1°)
+→ aligning, moves right-bottom 10 and rotates by 71°…???too complicated.
+Besser: funktionen werden aktiv; Zahlen- und Texteingaben werden durch entsprechende inputs eingefügt.
+Z.B. move 110
+wird zu transform move h 110.
+Wir brauchen also zwei Modi, den Standardmodus und den input-modus.
+
+Leertaste fixiert aktuelle Situation als "neue Welt" (state-waypoint). !
+
+Es gibt einige dokumentweite Variablen, die mit dem State gespeichert werden, aber volatil sind, d.h. immer auf default zurückgesetzt werden, wenn die Anwendung initiiert wird.
+
+Shift hat besondere Bedeutung: während Shift gedrückt ist, werden Loslass-Events verschoben, bis Shift logelassen wird.
+
+
+-----
+init
+· reset document-wide variables, i.e. vector, shortcuts, …
