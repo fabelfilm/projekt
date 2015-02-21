@@ -46,7 +46,7 @@ html, body {
   
   body {
     padding: 1px;
-    background-color: #137;
+    background-color: #136;
   }
   .page {
     margin: .5em;
@@ -102,7 +102,7 @@ html, body {
 .page-number {
   position: absolute;
   width: 100%;
-  bottom: -10mm;
+  bottom: 10mm;
   text-align: center;
 }
 
