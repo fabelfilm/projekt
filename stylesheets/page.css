@@ -46,7 +46,7 @@ html, body {
   
   body {
     padding: 1px;
-    background-color: #c41;
+    background-color: #024		;
   }
   .page {
     margin: .5em;
@@ -78,6 +78,15 @@ html, body {
   height: 118mm !important;
   box-shadow:0 0 40px rgba(255,255,255,.2) !important;
 	/*background-color: #fff;*/
+  box-shadow:0 0 40px rgba(255,255,255,0) !important;
+  background:transparent;
+  color:white;
+}
+.filmformat .hervorgehoben {
+  text-shadow:0px 0px 4px rgba(205,4,4,.9);color:#ffcec0;background-color:rgba(100,0,0,.7)
+}
+.filmformat a {
+  color: #9bf !important; text-shadow:0px 0px 2px rgba(80,94,255,.3);
 }
 
 /* page content */
