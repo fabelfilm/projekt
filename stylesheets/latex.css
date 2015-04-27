@@ -21,7 +21,7 @@
 /* LaTeX indents all paragraphs except the first one */
 .latex p {
   margin: 1em 0;
-  text-indent: 1.5em;
+  /*text-indent: 1.5em;*/
 }
 .latex p.no-indent,
 .latex p:first-child,

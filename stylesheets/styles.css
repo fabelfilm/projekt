@@ -82,8 +82,8 @@ header ul a {
   padding-top:6px;
   height:40px;
 }
-footer {color:rgba(255,255,255,.5);font-size:smaller;}
-footer a {background-color:rgba(90,180,255,.5);}
+footer {z-index:18;color:rgba(255,255,255,.5);font-size:smaller;padding-top:2em;}
+footer a {background-color:rgba(100,190,255,.7);padding:4px;}
 /*
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
