@@ -57,7 +57,7 @@
     <div id="pagecontainer">
     <section id="intro">
     <div title="Fabelfilm-Workshops" class="page filmformat"><div class="page-inner">
-        <img alt="fabelfilm-Workshops" src="img/fabelfilm-workshops.png" style="height: auto; position: relative; width: 10cm; left: -14%; top: 2mm;transform:translate(0px,opx) !important;" />
+        <img alt="fabelfilm-Workshops" src="img/fabelfilm-workshops.png" style="height: auto; position: relative; width: 10cm; left: -14%; top: 2mm;" />
         <ul>
         	<li onClick="location.href='#schattenfilm';" class="insite">
         			<h3>Kameraworkshop „Schattenfilm“</h3>
