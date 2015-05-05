@@ -2,45 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Projekt by luftschiffkollektiv</title>
+    <title>Fabelfilm-Workshops Kamera, Film, Performance</title>
 
     <link rel="stylesheet" href="stylesheets/page.css">
     <link rel="stylesheet" href="stylesheets/latex.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <!--script src="javascripts/helpers.js"></script>
     <script src="javascripts/make_movable.js"></script-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--user-scalable=no-->
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="javascripts/parallax.js"></script>
   </head>
   <body class="A4pages latex">
-  <!--header>
-        <h1>Projekt</h1>
-        <p>Luftschiff-Projekt 2015</p>
-        <p class="view"><a href="https://github.com/luftschiffkollektiv/projekt">View the Project on GitHub <small>luftschiffkollektiv/projekt</small></a></p>
-        <ul>
-          <li><a href="https://github.com/luftschiffkollektiv/projekt/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/luftschiffkollektiv/projekt/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/luftschiffkollektiv/projekt">View On <strong>GitHub</strong></a></li>
-        </ul>
-    </header-->
-    
-    
-    <div class="" style="z-index:43;position:fixed;top:0;right:0;width:100px;text-align:right;"><button id="ueberblick" onclick="zoom">↑ Kapitel</button><hr/>
-    <button type="button" id="deutsch" style="background:rgb(180,160,10);" onclick="deutsch">deutsch</button><button id="en" style="background:rgb(240,30,10);" onclick="en">english</button><button id="fr" style="background:rgb(60,0,180);" onclick="fr">francais</button></div>
+    <div class="" style="display:none;z-index:43;position:fixed;top:0;right:0;width:100px;text-align:right;"><button id="ueberblick" onclick="zoom">↑ Kapitel</button><hr/>
+    <a class="button" id="de" style="background:rgb(180,160,10);" href="index.html">deutsch</a>
+    <a class="button" id="en" style="background:rgb(240,30,10);" href="en.html">english</a></div>
     <script>
-    function de(){
-        window.location.href='http://luftschiffkollektiv.github.io/projekt/';
-    }
-    function fr(){
-        window.location.href='http://luftschiffkollektiv.github.io/projekt/fr.html';
-    }
-    function en(){
-        window.location.href='http://luftschiffkollektiv.github.io/projekt/en.html';
-    }
         var zoomedOut = false;
         document.addEventListener("DOMContentLoaded", function(event) {
             //nix
@@ -72,92 +51,82 @@
             }
         }
     </script>
-    
-    
-    
+
+
+
     <div id="pagecontainer">
-    <section id="Exposée">
-    <div alt="Luftschiff-Projekt" class="page newchapter"><div class="page-inner">
-        <h1>Exposée</h1>
+    <section id="intro">
+    <div title="Fabelfilm-Workshops" class="page filmformat"><div class="page-inner">
+        <img alt="fabelfilm-Workshops" src="img/fabelfilm-workshops.png" style="height: auto; position: relative; width: 10cm; left: -14%; top: 2mm;" />
+        <ul>
+        	<li onClick="location.href='#schattenfilm';" class="insite">
+        			<h3>Kameraworkshop „Schattenfilm“</h3>
+        			<p>
+        				Nächster Termin:
+        					<b>Dienstag 12. Mai um 19 Uhr</b> im
+        					<a href="https://www.google.de/maps/place/52°32'46.2%22N+13°23'13.6%22E/@52.5461667,13.3871111,855m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0">Park Humboldthain</a>.
+        				<br/>
+						Bitte bring Taschenlampen und Kamera (oder Handy) mit.
+					</p>
+		</li>
+		<li onClick="location.href='#wesen';" class="insite">
+				<h3>Performance-Workshop „Wesen von fabelhafter Deutlichkeit“</h3>
+        		<p>
+					(in Planung)<br/><br/><br/>
+				</p>
+		</li>
+			</ul>
     </div></div>
-    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/1.jpg');background-size: 100% 100%;"><div class="page-inner">
-      <small class="page-number">1</small>
-    </div></div>
-    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/2.jpg');background-size: 100% 100%;"><div class="page-inner">
-      <p class="textbox movable" style="top: 50mm; left: 67mm;">
-1917.
-ADINE und BONI leben auf ihrem
-Luftschiff über der Ostsee ihre
-Utopie. Sie komponieren Musik
-und drehen Filme über ihren
-Helden, Prinz Kropotkin, der
-zum Revolutionär geworden ist.
 
-Fiebrig erwarten sie
-einen Auftrag von ihrer
-anarchistischen Zelle, um die
-Weltrevolution anzuzetteln.
-    </p>
-      <small class="page-number">1/4</small>
-    </div></div>
-    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/3.jpg');background-size: 100% 100%;"><div class="page-inner">
-      <p class="textbox movable" style="top: 41mm; left: 0mm;color:white;">
-Im Sturm rettet Adine eine
-Schiffbrüchige: CLÉO.
-Cléo provoziert Adine, die ihrerseits
-kontert, und es kommt zu einem
-stürmischen Tanz der Drei.
 
-Als Cléo schläft, finden Adine und
-Boni in einem versteckten Kuvert
-den Auftrag. Sie stürzen sich in die
-Vorbereitung des für den Folgetag
-angesetzten Coups. Dabei kommt es
-zu einer Diskussion über Cléo. Boni
-möchte sie im Luftschiff aufnehmen;
-Adine will sie bald loswerden.</p>
-      <small class="page-number">2/4</small>
+
+
+
+<div id="schattenfilm" title="Kameraworkshop Schattenfilm" class="page" style="background-image:url('img/a4-1.png');background-size: 100% 100%;background-color:transparent;"><div class="page-inner">
+       <div class="zentrieren"><img alt="Kameraworkshop Fabelfilm" src="img/kameraworkshop-schattenfilm.png" style="width:78mm;height:auto;position:relative;top:-2mm;" /></div>
+      <p>
+      Wir bauen eine fantastische Miniaturwelt und inszenieren darin mit Licht und Schatten einen kurzen Film.
+      </p>
+      <p><img alt="mitbringen:" src="img/mitbringen.png" style="height:16pt;width:auto;position:relative;top:11pt;left:-3pt;" />
+      <ul>
+      	<li>Taschenlampe</li>
+      	<li>Kamera (oder Handy)</li>
+      </ul>
+      <p>
+      Ihr könnt im Workshop alles über Optik, Videotechnik und Filmsprache lernen; und ausprobieren, wie eine Gruppe spontan einen Film drehen kann. <br/>Beitrag: Freiwillige Spende.
+      </p>
+      <p>Jeden <b>Dienstag um 19 Uhr</b> im <a href="https://www.google.de/maps/place/52°32'46.2%22N+13°23'13.6%22E/@52.5461667,13.3871111,855m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0">Park Humboldthain</a>.</p>
+      <p><img alt="mitmachen:" src="img/mitmachen.png" style="height:16pt;width:auto;position:relative;top:2pt;" /><a href="mailto:fabelfilm@yandex.com">fabelfilm@yandex.com</a></p>
+      <!--p class="textbox movable" style="top: 50mm; left: 67mm;"-->
+      <img alt="Schattenfilmbild" class="ueberstand" src="img/schattenfilmbild.png" style="width:14.4cm; height:auto; position:relative;left:16em;top:0em;z-index:28;"/>
+      <!--small class="page-number">1/4</small-->
     </div></div>
-    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/4.jpg');background-size: 100% 100%;"><div class="page-inner">
-      <p class="textbox movable" style="top: 15mm; left: 74mm;">
-Adine nähert sich Cléo an und verliert
-dabei mehr und mehr die Kontrolle.
-Im Spiel der beiden steigert Cléo
-ihre Provokation, bis es zu einem
-brutalen Kampf im Meer kommt. </p>
-      <small class="page-number">3/4</small>
-    </div></div>
-    <div alt="Luftschiff-Projekt" class="page" style="background-image:url('img/5.jpg');background-size: 100% 100%;"><div class="page-inner">
-      <p class="textbox movable" style="top: 20mm; left: -7mm;">
-Auf der Landstraße werden
-Adine und Boni von Cléo überholt.
-Ein General, ihr Vater, empfängt
-Cléo am Adelssitz, wo sich die
-Noblesse Europas zum Ball
-eingefunden hat.
-Unter den Gästen erkennen
-wir einen gewissen Prinzen:
-Peter Kropotkin.</p>
-      <small class="page-number">4/4</small>
-    </div></div>
-    </section><section id="Finanzierung">
-    <div class="page newchapter"><div class="page-inner">
-        <h1>Finanzierung</h1>
-    </div></div>
-    <div class="page"><div class="page-inner">
-        <h1></h1>
-    </div></div>
-    </section><section id="Team">
-    <div class="page newchapter" ><div class="page-inner">
-        <h1>Team</h1>
-    </div></div>
-    <div class="page"><div class="page-inner">
-        <h1></h1>
+
+
+
+
+
+
+<div id="wesen" title="Performance-Workshop Wesen von fabelhafter Deutlichkeit" class="page" style="background-image:url('img/a4-0.png');background-size: 100% 100%;background-color:transparent;"><div class="page-inner">
+      <div class="zentrieren"><img alt="Kameraworkshop Wesen von fabelhafter Deutlichkeit" src="img/wesen-workshop.png" style="width:78mm;height:auto;position:relative;top:-6mm;" /></div>
+      <p class="hervorgehoben">Dieser Performance-Workshop beginnt erst im Mai. Du kannst dich schon anmelden über <a href="mailto:fabelfilm@yandex.com">fabelfilm@yandex.com</a>.</p><p>
+      Wie kann die Kamera Wesen von höchster Eindringlichkeit zeigen,
+Wesen wie im Märchen?</p><p>
+
+Mit Masken, Kostümteilen und Enthusiasmus machen wir uns auf,
+bauen mitten in den Park einen neuen Raum,
+mitten in die Gegenwart eine andere Zeit, und für einen Augenblick
+treffen Wesen von märchenhafter Deutlichkeit aufeinander!</p><p>
+
+Es entsteht ein kurzer Märchenfilm. Vorkenntnisse sind nicht nötig.
+Bitte meldet euch verbindlich an; 4-10 Leute können teilnehmen.
+      </p>
+      <!--small class="page-number">1/4</small-->
     </div></div>
  </section>
     </div>
     <footer>
-      <p>Kontaktiere das <a href="https://github.com/luftschiffkollektiv">Luftschiffkollektiv</a>-Team via <b>luftschiffkollektiv@yandex.com</b></p>
+      <p>Das Material auf dieser Seite steht unter der Creative-Commons-Lizenz Non-Commercial Share-Alike. Verwende es für eigene nichtkommerzielle Workshops und Projekte! Kontakt: <a href="mailto:fabelfilm@yandex.com">fabelfilm@yandex.com</a></p>
     </footer>
     <script src="javascripts/scale.fix.js"></script>
     

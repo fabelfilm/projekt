@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <!--script src="javascripts/helpers.js"></script>
     <script src="javascripts/make_movable.js"></script-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--user-scalable=no-->
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="javascripts/parallax.js"></script>
   </head>
   <body class="A4pages latex">
     <div class="" style="display:none;z-index:43;position:fixed;top:0;right:0;width:100px;text-align:right;"><button id="ueberblick" onclick="zoom">↑ Kapitel</button><hr/>
@@ -50,19 +51,19 @@
             }
         }
     </script>
-    
-    
-    
+
+
+
     <div id="pagecontainer">
     <section id="intro">
     <div title="Fabelfilm-Workshops" class="page filmformat"><div class="page-inner">
-        <img alt="fabelfilm-Workshops" src="img/fabelfilm-workshops.png" style="width:70%; height: auto;position:relative;left:-8em;top:1em;" />
+        <img alt="fabelfilm-Workshops" src="img/fabelfilm-workshops.png" style="height: auto; position: relative; width: 10cm; left: -14%; top: 2mm;transform:translate(0px,opx) !important;" />
         <ul>
         	<li onClick="location.href='#schattenfilm';" class="insite">
         			<h3>Kameraworkshop „Schattenfilm“</h3>
         			<p>
         				Nächster Termin:
-        					<b>Dienstag 5. Mai um 19 Uhr</b> im
+        					<b>Dienstag 12. Mai um 19 Uhr</b> im
         					<a href="https://www.google.de/maps/place/52°32'46.2%22N+13°23'13.6%22E/@52.5461667,13.3871111,855m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0">Park Humboldthain</a>.
         				<br/>
 						Bitte bring Taschenlampen und Kamera (oder Handy) mit.
@@ -76,8 +77,13 @@
 		</li>
 			</ul>
     </div></div>
-    <div id="schattenfilm" title="Kameraworkshop Schattenfilm" class="page" style="background-image:url('img/a4-1.png');background-size: 100% 100%;background-color:transparent;"><div class="page-inner">
-      <img alt="Kameraworkshop Fabelfilm" src="img/kameraworkshop-schattenfilm.png" style="width:60%;height:auto;position:relative;left:7em;margin-top:-3em;" />
+
+
+
+
+
+<div id="schattenfilm" title="Kameraworkshop Schattenfilm" class="page" style="background-image:url('img/a4-1.png');background-size: 100% 100%;background-color:transparent;"><div class="page-inner">
+       <div class="zentrieren"><img alt="Kameraworkshop Fabelfilm" src="img/kameraworkshop-schattenfilm.png" style="width:78mm;height:auto;position:relative;top:-2mm;" /></div>
       <p>
       Wir bauen eine fantastische Miniaturwelt und inszenieren darin mit Licht und Schatten einen kurzen Film.
       </p>
@@ -92,11 +98,17 @@
       <p>Jeden <b>Dienstag um 19 Uhr</b> im <a href="https://www.google.de/maps/place/52°32'46.2%22N+13°23'13.6%22E/@52.5461667,13.3871111,855m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0">Park Humboldthain</a>.</p>
       <p><img alt="mitmachen:" src="img/mitmachen.png" style="height:16pt;width:auto;position:relative;top:2pt;" /><a href="mailto:fabelfilm@yandex.com">fabelfilm@yandex.com</a></p>
       <!--p class="textbox movable" style="top: 50mm; left: 67mm;"-->
-      <img alt="Schattenfilmbild" src="img/schattenfilmbild.png" style="width:111%; height:auto; position:relative;left:16em;top:0em;z-index:28;"/>
+      <img alt="Schattenfilmbild" class="ueberstand" src="img/schattenfilmbild.png" style="width:14.4cm; height:auto; position:relative;left:16em;top:0em;z-index:28;"/>
       <!--small class="page-number">1/4</small-->
     </div></div>
-    <div id="wesen" title="Performance-Workshop Wesen von fabelhafter Deutlichkeit" class="page" style="background-image:url('img/a4-0.png');background-size: 100% 100%;background-color:transparent;"><div class="page-inner">
-      <img alt="Kameraworkshop Wesen von fabelhafter Deutlichkeit" src="img/wesen-workshop.png" style="width:60%;height:auto;position:relative;left:7em;margin-top:-3em;" />
+
+
+
+
+
+
+<div id="wesen" title="Performance-Workshop Wesen von fabelhafter Deutlichkeit" class="page" style="background-image:url('img/a4-0.png');background-size: 100% 100%;background-color:transparent;"><div class="page-inner">
+      <div class="zentrieren"><img alt="Kameraworkshop Wesen von fabelhafter Deutlichkeit" src="img/wesen-workshop.png" style="width:78mm;height:auto;position:relative;top:-6mm;" /></div>
       <p class="hervorgehoben">Dieser Performance-Workshop beginnt erst im Mai. Du kannst dich schon anmelden über <a href="mailto:fabelfilm@yandex.com">fabelfilm@yandex.com</a>.</p><p>
       Wie kann die Kamera Wesen von höchster Eindringlichkeit zeigen,
 Wesen wie im Märchen?</p><p>

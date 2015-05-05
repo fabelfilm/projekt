@@ -36,6 +36,9 @@ transition:all .7s, transform .1s 0s;
   transform: scale(0.35); z-index:40;
 box-shadow: 0mm 0mm 10mm rgba(0, 0, 0, .4);}
 
+
+
+
 header {
   transition:all .2s ease-out;
   width:270px;
