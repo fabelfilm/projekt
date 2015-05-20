@@ -83,7 +83,7 @@ img {max-width:90% !important;}
   left: 2cm;
   right: 2cm;
   margin-bottom: auto;
-  height:20em;
+  height:32em;
   padding-top:1cm; padding-bottom:0mm;overflow-y:visible;
 }
 .zentrieren {text-align: center;}

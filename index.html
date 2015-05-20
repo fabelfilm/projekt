@@ -15,6 +15,32 @@
     <![endif]-->
     <!--script src="javascripts/parallax.js"></script-->
     <script>
+        function switchToBackside() {
+            var frontsides = document.querySelectorAll(".page:not(.backside):not(.fullscreen)");
+            for (var i=0; i<frontsides.length; i++){
+                frontsides[i].addEventListener("click", switchToFrontside);
+                frontsides[i].style.zIndex="3";
+            }
+            var backsides = document.querySelectorAll(".page.backside");
+            for (var i=0; i<backsides.length; i++){
+                backsides[i].removeEventListener("click", switchToBackside);
+                backsides[i].style.transform="rotate(0deg)";
+                backsides[i].style.zIndex="4";
+            }
+        }
+        function switchToFrontside() {
+            var backsides = document.querySelectorAll(".page.backside");
+            for (var i=0; i<backsides.length; i++){
+                backsides[i].addEventListener("click", switchToBackside);
+                backsides[i].style.transform="rotate(-3deg)";
+                backsides[i].style.zIndex="3";
+            }
+            var frontsides = document.querySelectorAll(".page:not(.backside)");
+            for (var i=0; i<frontsides.length; i++){
+                frontsides[i].removeEventListener("click", switchToFrontside);
+                frontsides[i].style.zIndex="4";
+            }
+        }
         window.onload = function(){
             var pages = document.querySelectorAll(".page");
             for (var i=0; i<pages.length; i++){
@@ -24,6 +50,7 @@
             for (var i=0; i<fullscreens.length; i++){
                 fullscreens[i].style.height=window.innerHeight+"px";
             }*/
+            switchToFrontside()
         }
     </script>
   </head>
@@ -64,8 +91,8 @@
       <img alt="Schattenfilmbild" class="ueberstand" src="img/schattenfilmbild.png" style="width:14.4cm; height:auto; position:relative;left:16em;top:0em;z-index:28;"/>
 </div></div>
 
-<div id="schattenfilm" title="Kameraworkshop Schattenfilm - Making-of" class="page backside" style="background-image:url('img/a4-1.png');background-size: 100% 100%;"><div class="page-inner">
-       <div class="zentrieren"><h2>Kameraworkshop Schattenfilm:<br/>Making-of.</h2></div>
+<div id="schattenfilm" title="Kameraworkshop Schattenfilm - Making-of" class="page backside" style="background-image:url('img/a4-1.png');background-size: 100% 100%;"><p>→ zur Anleitung</p><div class="page-inner">
+        <div class="zentrieren"><h2>Kameraworkshop Schattenfilm</h2></div>
       <p>Den Schattenfilm-Workshop inspirierten meine Erfahrungen mit <b>Theatertechniken</b> (Grotowski und vor allem Boal), die Idee eines <b>Fabel-Raums</b>, also einer abgeschlossenen temporären Zone, in der märchenhafte Gesetze gelten, und schließlich meine Erlebnisse im <b>Kino</b> und in diversen Theater- und <b>Filmkollektiven</b>. Und mein Dilemma, dass mein eigenes konkretes Werk mich oft langweilt und beschämt und ich umso höher <b>die konkreten Ideen Anderer</b> schätze und zusammenbringen möchte.</p>
       <p>Die Teilnehmenden des Workshops können hoffentlich mitnehmen:
       <ul>

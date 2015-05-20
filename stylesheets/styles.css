@@ -1,3 +1,8 @@
+
+.page.backside {z-index:-1;position:relative;top:-317mm;left:-3mm;}
+.page.backside > p{position:absolute;color:white;font-weight:bold;z-index:3;}
+
+
 * * * {vertical-align:middle;}
 
 .mechanisch {color:#850;background-color:rgb(235,230,10); padding:1px .2em;margin:-1px -.2em !important; border-radius:8px;}
