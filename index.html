@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html style="height:100%; width:100%;">
   <head>
     <meta charset="utf-8">
     <title>Fabelfilm-Workshops Kamera, Film, Performance</title>
@@ -14,57 +14,29 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!--script src="javascripts/parallax.js"></script-->
-  </head>
-  <body class="A4pages latex">
-    <div class="" style="display:none;z-index:43;position:fixed;top:0;right:0;width:100px;text-align:right;"><button id="ueberblick" onclick="zoom">↑ Kapitel</button><hr/>
-    <a class="button" id="de" style="background:rgb(180,160,10);" href="index.html">deutsch</a>
-    <a class="button" id="en" style="background:rgb(240,30,10);" href="en.html">english</a></div>
     <script>
-        var zoomedOut = false;
-        document.addEventListener("DOMContentLoaded", function(event) {
-            //nix
-        });
-        function scroll(target){
-            console.log("TARGET: "+target.className)
-            var scroller=setInterval(function(){target.tagName ? target.scrollIntoView() : null;},20);
-            setTimeout(function(){clearInterval(scroller)},1010)
-        }
-        document.getElementById("ueberblick").addEventListener("click", zoom);
-        function zoom(e){
-            if (zoomedOut) {
-                pagecontainer.className = pagecontainer.className.replace(' zoomed-out', '');
-                zoomedOut= false;
-                var pages = document.getElementsByClassName('page');
-                for (var i = 0; i<pages.length; i++) {
-                    pages[i].removeEventListener("click", zoom);
-                    pages[i].removeEventListener("click", scroll(e.currentTarget));
-                }
-            } else {
-                pagecontainer.className += ' zoomed-out';
-                zoomedOut = true;
-                var pages = document.getElementsByClassName('page');
-                for (var i = 0; i<pages.length; i++) {
-                    pages[i].addEventListener("click", zoom);
-                    pages[i].addEventListener("click", scroll);
-                }
-                scroll(pagecontainer);
-            }
+        window.onload = function(){
+            var pages = document.querySelectorAll(".page");
+            for (var i=0; i<pages.length; i++){
+                pages[i].style.backgroundColor="transparent";
+            }/*
+            var fullscreens = document.querySelectorAll(".fullscreen");
+            for (var i=0; i<fullscreens.length; i++){
+                fullscreens[i].style.height=window.innerHeight+"px";
+            }*/
         }
     </script>
-
-
-
-    <div id="pagecontainer">
-    <section id="intro">
-    <div title="Fabelfilm-Workshops" class="page filmformat"><div class="page-inner">
+  </head>
+  <body class="A4pages latex" style="height:100%; width:100%;"><div id="pagecontainer" style="height:100%; width:100%;">
+    <div title="Fabelfilm-Workshops" class="page fullscreen"><div class="page-inner">
         <img alt="fabelfilm-Workshops" src="img/fabelfilm-workshops.png" style="height: auto; position: relative; width: 10cm; left: -14%; top: 2mm;" />
         <ul>
         	<li onClick="location.href='#schattenfilm';" class="insite">
         			<h3>Kameraworkshop „Schattenfilm“</h3>
         			<p>
         				Nächster Termin:
-        					<b>Dienstag 12. Mai um 19 Uhr</b> im
-        					<a href="https://www.google.de/maps/place/52°32'46.2%22N+13°23'13.6%22E/@52.5461667,13.3871111,855m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0">Park Humboldthain</a>.
+        					<b>Dienstag 26. Mai um 20 Uhr</b> im
+        					<a href="https://www.google.de/maps/place/52°32'46.2%22N+13°23'13.6%22E/@52.5461667,13.3871111,855m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0">Park&nbsp;Humboldthain</a>.
         				<br/>
 						Bitte bring Taschenlampen und Kamera (oder Handy) mit.
 					</p>
@@ -78,38 +50,51 @@
 			</ul>
     </div></div>
 
-
-
-
-
-<div id="schattenfilm" title="Kameraworkshop Schattenfilm" class="page" style="background-image:url('img/a4-1.png');background-size: 100% 100%;background-color:transparent;"><div class="page-inner">
+<div id="schattenfilm" title="Kameraworkshop Schattenfilm" class="page" style="background-image:url('img/a4-1.png');background-size: 100% 100%;"><div class="page-inner">
        <div class="zentrieren"><img alt="Kameraworkshop Fabelfilm" src="img/kameraworkshop-schattenfilm.png" style="width:78mm;height:auto;position:relative;top:-2mm;" /></div>
-      <p>
-      Wir bauen eine fantastische Miniaturwelt und inszenieren darin mit Licht und Schatten einen kurzen Film.
-      </p>
+      <p>Wir bauen eine fantastische Miniaturwelt und inszenieren darin mit Licht und Schatten einen kurzen Film.</p>
       <p><img alt="mitbringen:" src="img/mitbringen.png" style="height:16pt;width:auto;position:relative;top:11pt;left:-3pt;" />
       <ul>
       	<li>Taschenlampe</li>
       	<li>Kamera (oder Handy)</li>
-      </ul>
-      <p>
-      Ihr könnt im Workshop alles über Optik, Videotechnik und Filmsprache lernen; und ausprobieren, wie eine Gruppe spontan einen Film drehen kann. <br/>Beitrag: Freiwillige Spende.
-      </p>
-      <p>Jeden <b>Dienstag um 19 Uhr</b> im <a href="https://www.google.de/maps/place/52°32'46.2%22N+13°23'13.6%22E/@52.5461667,13.3871111,855m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0">Park Humboldthain</a>.</p>
+      </ul></p>
+      <p>Ihr könnt im Workshop alles über Optik, Videotechnik und Filmsprache lernen; und ausprobieren, wie eine Gruppe spontan einen Film drehen kann. <br/>Beitrag: <span style="text-decoration:underline;">Freiwillige</span> Spende.</p>
+      <p>Jeden <b>Dienstag um 20 Uhr</b> im <a href="https://www.google.de/maps/place/52°32'46.2%22N+13°23'13.6%22E/@52.5461667,13.3871111,855m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0">Park Humboldthain</a>.</p>
       <p><img alt="mitmachen:" src="img/mitmachen.png" style="height:16pt;width:auto;position:relative;top:2pt;" /><a href="mailto:fabelfilm@yandex.com">fabelfilm@yandex.com</a></p>
-      <!--p class="textbox movable" style="top: 50mm; left: 67mm;"-->
       <img alt="Schattenfilmbild" class="ueberstand" src="img/schattenfilmbild.png" style="width:14.4cm; height:auto; position:relative;left:16em;top:0em;z-index:28;"/>
-      <!--small class="page-number">1/4</small-->
-    </div></div>
+</div></div>
+
+<div id="schattenfilm" title="Kameraworkshop Schattenfilm - Making-of" class="page backside" style="background-image:url('img/a4-1.png');background-size: 100% 100%;"><div class="page-inner">
+       <div class="zentrieren"><h2>Kameraworkshop Schattenfilm:<br/>Making-of.</h2></div>
+      <p>Den Schattenfilm-Workshop inspirierten meine Erfahrungen mit <b>Theatertechniken</b> (Grotowski und vor allem Boal), die Idee eines <b>Fabel-Raums</b>, also einer abgeschlossenen temporären Zone, in der märchenhafte Gesetze gelten, und schließlich meine Erlebnisse im <b>Kino</b> und in diversen Theater- und <b>Filmkollektiven</b>. Und mein Dilemma, dass mein eigenes konkretes Werk mich oft langweilt und beschämt und ich umso höher <b>die konkreten Ideen Anderer</b> schätze und zusammenbringen möchte.</p>
+      <p>Die Teilnehmenden des Workshops können hoffentlich mitnehmen:
+      <ul>
+      	<li>einen intuitiveren Zugang zu ihrer vorhandenen Technik,</li>
+      	<li>praktische Anwendung optischer Gesetze,</li>
+      	<li>Strategien kollektiver Dramaturgie aus dem Theater der Befreiung,</li>
+      	<li>und die Technik des Fabelraums, der eine Kreativitätsquelle öffnet, indem er bestimmte Hemmnisse behauptend ausblendet.</li>
+      </ul>Diese Inhalte können multiplikativ weitergegeben werden im Sinne einer Emanzipation aller Kulturproduzentinnen von scheinbaren Zwängen in der Kulturindustrie.</p>
+      <p>Im Park treffen wir uns. Ein Stuhl, das ist der Thron. Eine blaue Decke, darauf Suppe und Kraut. Ein Strauch hält Wolle, Scheren und Zwirn.</p>
+      <p>In die Baumgruppe rund um unsere mulchige Lichtung hängen wir Bänder und Zweige, umgrenzen den kleinen Kosmos mit einem Horizont. Rettungsfolie, gold und silber, ist Himmel und Meer. Kerzen am Boden sind die Sterne.</p>
+      <p>Wenn es dunkel geworden ist, schalten wir die Taschenlampen an. Das Chaos des Horizonts verdichtet sich zu Städten und Dörfern, Bächen und Höhlen. Unsere Hände bewegen sich, getrieben von einer Melodie, und animieren ihren Schatten zu fabelhaften Wesen.</p>
+      <p>Auf der Rinde des dicken Baums erscheinen ein Gesicht und eine Figur — das ist ein Schattenwesen. Was ist sein Charakter? Wir können den Charakter entweder <i>mechanisch</i> definieren: <span class="mechanisch">als Uhrwerk, das immer wieder neu aufgezogen werden muss; als Spiegel, der auf Andere reagiert.</span> Oder <i>dramatisch</i>: <span class="dramatisch">als Wesen mit Herzenswunsch, Verblendung und Angst.</span> Es braucht keine Vergangenheit und keine Zukunft, aber einen Ort und eine Tätigkeit.</p>
+</div></div>
+<div id="schattenfilm" title="Kameraworkshop Schattenfilm - Making-of (ctd.)" class="page backside" style="background-image:url('img/a4-1.png');background-size: 100% 100%;"><div class="page-inner">
+      <p>Jetzt sind wir bereit für den ersten Akt. Wir führen im Schattenbild vor, was unser Schattenwesen ausmacht: die Tätigkeit, die seinem inneren Mechanismus entspricht oder seinem Wunsch oder Zwang. Und am Ende brechen wir auf (oder aus), auf der Spur einer diffusen Verheißung.</p>
+      <p>Alle haben eine Kamera mitgebracht oder ihr Smartphone, und eine Taschenlampe. So können drei bis vier Leute gemeinsam eine Aufnahme machen. Ich gehe von Gruppe zu Gruppe und helfe bei technischen oder dramaturgischen Problemen. Mein Ziel ist, dass alle ihre Geräte mit einer solchen Intuition führen, dass alle ihre Gedanken langsam in das Märchennarrativ wandern können.</p>
+      <p>An den ersten Akt schließt eine Reflexionsrunde an. Die Wesen werden kurz vorgestellt und die spontan entstandenen Strategien zur Darstellung ihrer Eigenschaften werden ausgetauscht.</p>
+      <p>Der Zweite Akt zeigt den Weg eines jeden Wesens durch den Horizont des Kosmos'. Auf diesem Ring kommt es zu Kollisionen. Wie begegnen einander die Schattenwesen? Achtlos oder liebevoll? Kommt es zu Missverständnis und Konflikt?</p>
+      <p>Reflexion des zweiten Akts: welche Konflikte sind entstanden? Jede Schattenspielerin überlegt für ihr Wesen, wie es mit dem entstandenen Konflikt umgeht: was es wahrnimmt, welche Beziehung zu dem/den Anderen entsteht, und je nach Definitionsweise des Charakters: welche Mechanismen oder Gefühle zum Tragen kommen.</p>
+      <p>Die Konflikte eröffnen den dritten Akt. Wir reinszenieren jeden einzelnen Konflikt und probieren jede Lösungsstrategie aus.</p>
+      <p>Am Ende sammeln wir die Aufnahmen und reflektieren über die im Workshop entwickelten Methoden. Wer mag, trifft sich am darauffolgenden Donnerstag zum Schnitt in der Computerwerkstatt. Der entstandene Film oder die Filme (je voraussichtl. 1—3 Minuten) werden an Alle verschickt.</p>
+</div></div>
 
 
 
 
-
-
-<div id="wesen" title="Performance-Workshop Wesen von fabelhafter Deutlichkeit" class="page" style="background-image:url('img/a4-0.png');background-size: 100% 100%;background-color:transparent;"><div class="page-inner">
+<div id="wesen" title="Performance-Workshop Wesen von fabelhafter Deutlichkeit" class="page" style="background-image:url('img/a4-0.png');background-size: 100% 100%;"><div class="page-inner">
       <div class="zentrieren"><img alt="Kameraworkshop Wesen von fabelhafter Deutlichkeit" src="img/wesen-workshop.png" style="width:78mm;height:auto;position:relative;top:-6mm;" /></div>
-      <p class="hervorgehoben">Dieser Performance-Workshop beginnt erst im Mai. Du kannst dich schon anmelden über <a href="mailto:fabelfilm@yandex.com">fabelfilm@yandex.com</a>.</p><p>
+      <p class="hervorgehoben">Dieser Performance-Workshop beginnt erst im Juni. Du kannst dich schon anmelden über <a href="mailto:fabelfilm@yandex.com">fabelfilm@yandex.com</a>.</p><p>
       Wie kann die Kamera Wesen von höchster Eindringlichkeit zeigen,
 Wesen wie im Märchen?</p><p>
 
@@ -123,12 +108,8 @@ Bitte meldet euch verbindlich an; 4-10 Leute können teilnehmen.
       </p>
       <!--small class="page-number">1/4</small-->
     </div></div>
- </section>
-    </div>
     <footer>
       <p>Das Material auf dieser Seite steht unter der Creative-Commons-Lizenz Non-Commercial Share-Alike. Verwende es für eigene nichtkommerzielle Workshops und Projekte! Kontakt: <a href="mailto:fabelfilm@yandex.com">fabelfilm@yandex.com</a></p>
     </footer>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+    </div><!--script src="javascripts/scale.fix.js"></script--></body>
 </html>
